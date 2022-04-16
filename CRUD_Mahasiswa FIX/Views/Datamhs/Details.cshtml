@@ -1,0 +1,42 @@
+﻿@model CRUD_Mahasiswa_FIX.Models.Datamhs
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Datamhs</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.mhs_nama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mhs_nama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mhs_prodi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mhs_prodi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mhs_nohp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mhs_nohp)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.mhs_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
